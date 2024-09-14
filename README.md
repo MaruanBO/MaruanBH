@@ -11,7 +11,7 @@ This project is built using C# 8.0 and .NET Web API, following enterprise-level 
 - **Functional Programming principles** Applied in Services, Repositories, Entities (chained functions style) and CQRS (Only on GetCustomerDetailsQueryHandler as showcase ).
 - **Logging**: We utilizes file-based logging to track application behavior and issues, facilitating easier debugging and monitoring for **showcase purposes** (Usually we should use **Event sourcing** with **Kafka** data pipeline).
 - **Error Handling** We implements general error handling strategies to log system messages and errors for **showcase purposes**.
-- **Testing coverage**  In business, repositories core layers.
+- **Testing coverage**  In business, persistance, core and CQRS.
 - **Api Documentation (Swagger)**
 
 The data is stored in memory, allowing for easier testing and evaluation, and the application uses a multi-layered architecture with proper abstractions for testability.
