@@ -1,4 +1,5 @@
 using MaruanBH.Domain.Entities;
+using MaruanBH.Core.TransactionContext.DTOs;
 
 namespace MaruanBH.Core.CustomerContext.DTOs
 {

@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using MaruanBH.Core.CustomerContext.DTOs;
+using MaruanBH.Core.TransactionContext.DTOs;
 
 namespace MaruanBH.Core.AccountContext.DTOs
 {

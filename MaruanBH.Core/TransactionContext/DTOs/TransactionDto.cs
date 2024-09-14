@@ -1,6 +1,6 @@
 using System;
 
-namespace MaruanBH.Core.CustomerContext.DTOs
+namespace MaruanBH.Core.TransactionContext.DTOs
 {
     public record TransactionDto
     {

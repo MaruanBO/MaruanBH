@@ -9,6 +9,7 @@ using MaruanBH.Domain.Base.Error;
 using MaruanBH.Core.Services;
 using MaruanBH.Core.CustomerContext.DTOs;
 using MaruanBH.Core.AccountContext.Queries;
+using MaruanBH.Core.TransactionContext.DTOs;
 
 namespace MaruanBH.Business.AccountContext.QueryHandler
 {

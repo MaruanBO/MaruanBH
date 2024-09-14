@@ -9,6 +9,7 @@ using MaruanBH.Core.CustomerContext.Queries;
 using CSharpFunctionalExtensions;
 using MaruanBH.Domain.Base.Error;
 using MaruanBH.Domain.Entities;
+using MaruanBH.Core.TransactionContext.DTOs;
 
 namespace MaruanBH.Business.CustomerContext.QueryHandler
 {
