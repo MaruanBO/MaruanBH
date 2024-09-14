@@ -8,9 +8,10 @@ This project is built using C# 8.0 and .NET Web API, following enterprise-level 
 - **Command Query Responsibility Segregation (CQRS)** with command/query validation
 - **S.O.L.I.D principles**
 - **Mediator Pattern**
-- **Functional Programming principles** Check the CQRS (Immutability), I did not have the time to implement side effect, pure functions and so on.
+- **Functional Programming principles** Applied in Services, Repositories, Entities (chained functions style) and CQRS (Only on GetCustomerDetailsQueryHandler as showcase ).
 - **Logging**: We utilizes file-based logging to track application behavior and issues, facilitating easier debugging and monitoring for **showcase purposes** (Usually we should use **Event sourcing** with **Kafka** data pipeline).
 - **Error Handling** We implements general error handling strategies to log system messages and errors for **showcase purposes**.
+- **Testing coverage**  In business, repositories core layers.
 - **Api Documentation (Swagger)**
 
 The data is stored in memory, allowing for easier testing and evaluation, and the application uses a multi-layered architecture with proper abstractions for testability.
@@ -21,10 +22,11 @@ The data is stored in memory, allowing for easier testing and evaluation, and th
 
 All data is exposed through the Web API to facilitate testing purposes, including the following endpoints:
 
+- **Create Account**: Endpoint to create a new account associated with a customer.
+- **Get Account Details**: Endpoint to retrieve account details, including information about transactions, balance and associated customer.
 - **Create Customer**: Endpoint to create a new customer in the system.
 - **Get Customer**: Endpoint to retrieve customer details. This is provided for demonstration and user experience purposes.
-- **Create Account**: Endpoint to create a new account associated with a customer.
-- **Get Account Details**: Endpoint to retrieve account details, including information about transactions and balance.
+
 
 ## Setup and Running the Application
 
