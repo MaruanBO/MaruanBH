@@ -1,0 +1,32 @@
+name: .MaruanBH CI Pipeline
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+    - name: Setup dotnet
+      uses: actions/setup-dotnet@v3
+      with:
+        dotnet-version: '8.x'
+
+    - name: Clean dotnet
+      run: dotnet clean MaruanBH.sln
+
+    - name: Restore dotnet dependencies
+      run: dotnet restore MaruanBH.sln
+
+    - name: Build dotnet
+      run: dotnet build MaruanBH.sln --configuration Release --no-restore
+
+    - name: Test with dotnet
+      run: dotnet test MaruanBH.Tests/MaruanBH.Tests.csproj --verbosity normal
