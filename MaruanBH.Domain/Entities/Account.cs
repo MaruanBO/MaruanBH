@@ -8,9 +8,9 @@ namespace MaruanBH.Domain.Entities
     /// </summary>
     public class Account
     {
-        public Guid Id { get; set; }
-        public Guid CustomerId { get; set; } // foreign key
-        public decimal InitialCredit { get; set; }
+        public Guid Id { get; init; }
+        public Guid CustomerId { get; init; } // foreign key
+        public decimal InitialCredit { get; init; }
 
         public Account(Guid customerId, decimal initialCredit)
         {
