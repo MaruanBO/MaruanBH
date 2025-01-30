@@ -8,11 +8,11 @@ This project is built using C# 8.0 and .NET Web API, following enterprise-level 
 - **Command Query Responsibility Segregation (CQRS)** with command/query validation
 - **S.O.L.I.D principles**
 - **Mediator Pattern**
-- **Functional Programming principles** Applied in Services, Repositories, Entities (chained functions style) and CQRS (Only on GetCustomerDetailsQueryHandler as showcase ).
+- **Functional Programming principles** Applied in Services, Repositories, Entities (chained functions style) and CQRS (Only on GetCustomerDetailsQueryHandler as showcase).
 - **Logging**: We utilizes file-based logging to track application behavior and issues, facilitating easier debugging and monitoring for **showcase purposes** (Usually we should use **Event sourcing** with **Kafka** data pipeline).
 - **Error Handling** We implements general error handling strategies to log system messages and errors for **showcase purposes**.
 - **Testing coverage**  In business (Including CQRS, Services and Repositories).
-- **Api Documentation (Swagger)**
+- **Api Documentation** (Swagger)
 
 The data is stored in memory, allowing for easier testing and evaluation, and the application uses a multi-layered architecture with proper abstractions for testability.
 
@@ -39,7 +39,7 @@ Ensure you have the following installed on your machine:
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/your-username/MaruanBH.git
+git clone https://github.com/MaruanBO/MaruanBH
 cd MaruanBH
 ```
 
