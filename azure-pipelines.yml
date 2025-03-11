@@ -5,7 +5,7 @@ pool:
   vmImage: 'ubuntu-latest' 
 
 variables:
-  solution: '**/*.sln'
+  solution: 'MaruanBH.sln'
   buildPlatform: 'Any CPU'
   buildConfiguration: 'Release'
 
@@ -22,5 +22,5 @@ steps:
 - script: dotnet build $(solution) --configuration $(buildConfiguration) --no-restore
   displayName: 'Build the project'
 
-- script: dotnet test --configuration $(buildConfiguration) --verbosity normal
+- script: dotnet test MaruanBH.Tests/MaruanBH.Tests.csproj --configuration $(buildConfiguration) --verbosity normal
   displayName: 'Run tests'
