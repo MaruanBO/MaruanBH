@@ -72,4 +72,4 @@ dotnet test MaruanBH.Tests/MaruanBH.Tests.csproj
 
 This project is licensed under the MIT License.
 
-> This project was created by Marouane Boukhriss Ouchab, including logic, directory structure, architecture, coding, testing, and software engineering decisions.
+> This project was created by Marouane Boukhriss Ouchab.
